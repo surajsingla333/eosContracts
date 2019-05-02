@@ -1,0 +1,249 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT Thu Dec 20 19:02:57 2018",
+    "version": "eosio::abi/1.0",
+    "structs": [
+        {
+            "name": "account",
+            "base": "",
+            "fields": [
+                {
+                    "name": "balance",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "addamount",
+            "base": "",
+            "fields": [
+                {
+                    "name": "from",
+                    "type": "name"
+                },
+                {
+                    "name": "value",
+                    "type": "asset"
+                },
+                {
+                    "name": "payer",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "cancelorder",
+            "base": "",
+            "fields": [
+                {
+                    "name": "canceler",
+                    "type": "name"
+                },
+                {
+                    "name": "order_id",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "currency_stats",
+            "base": "",
+            "fields": [
+                {
+                    "name": "token_name",
+                    "type": "string"
+                },
+                {
+                    "name": "native_currency",
+                    "type": "string"
+                },
+                {
+                    "name": "supply",
+                    "type": "asset"
+                },
+                {
+                    "name": "max_supply",
+                    "type": "asset"
+                },
+                {
+                    "name": "issuer",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "etatransfer",
+            "base": "",
+            "fields": [
+                {
+                    "name": "maker",
+                    "type": "name"
+                },
+                {
+                    "name": "taker",
+                    "type": "name"
+                },
+                {
+                    "name": "maker_quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "taker_quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "memo",
+                    "type": "string"
+                },
+                {
+                    "name": "fordata",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "make",
+            "base": "",
+            "fields": [
+                {
+                    "name": "maker",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "makeorder",
+            "base": "",
+            "fields": [
+                {
+                    "name": "maker",
+                    "type": "name"
+                },
+                {
+                    "name": "amount",
+                    "type": "asset"
+                },
+                {
+                    "name": "exchangetoken",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "order",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "maker",
+                    "type": "name"
+                },
+                {
+                    "name": "amount",
+                    "type": "asset"
+                },
+                {
+                    "name": "exchangetoken",
+                    "type": "asset"
+                },
+                {
+                    "name": "status",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "subamount",
+            "base": "",
+            "fields": [
+                {
+                    "name": "from",
+                    "type": "name"
+                },
+                {
+                    "name": "value",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "takeorder",
+            "base": "",
+            "fields": [
+                {
+                    "name": "taker",
+                    "type": "name"
+                },
+                {
+                    "name": "orderid",
+                    "type": "uint64"
+                }
+            ]
+        }
+    ],
+    "types": [],
+    "actions": [
+        {
+            "name": "addamount",
+            "type": "addamount",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "cancelorder",
+            "type": "cancelorder",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "etatransfer",
+            "type": "etatransfer",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "make",
+            "type": "make",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "makeorder",
+            "type": "makeorder",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "subamount",
+            "type": "subamount",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "takeorder",
+            "type": "takeorder",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "accounts",
+            "type": "account",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "listedorders",
+            "type": "order",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "stat",
+            "type": "currency_stats",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "abi_extensions": []
+}

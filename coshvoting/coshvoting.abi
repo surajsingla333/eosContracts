@@ -1,0 +1,68 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT Sat Nov 17 03:51:24 2018",
+    "version": "eosio::abi/1.0",
+    "structs": [
+        {
+            "name": "make",
+            "base": "",
+            "fields": [
+                {
+                    "name": "maker",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "vote",
+            "base": "",
+            "fields": [
+                {
+                    "name": "voter",
+                    "type": "name"
+                },
+                {
+                    "name": "vote",
+                    "type": "bool"
+                }
+            ]
+        },
+        {
+            "name": "voter",
+            "base": "",
+            "fields": [
+                {
+                    "name": "key",
+                    "type": "name"
+                },
+                {
+                    "name": "vote",
+                    "type": "bool"
+                }
+            ]
+        }
+    ],
+    "types": [],
+    "actions": [
+        {
+            "name": "make",
+            "type": "make",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "vote",
+            "type": "vote",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "voters",
+            "type": "voter",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "abi_extensions": []
+}

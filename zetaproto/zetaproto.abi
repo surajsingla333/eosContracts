@@ -1,0 +1,329 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT Fri Dec 21 20:59:33 2018",
+    "version": "eosio::abi/1.0",
+    "structs": [
+        {
+            "name": "account",
+            "base": "",
+            "fields": [
+                {
+                    "name": "balance",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "add",
+            "base": "",
+            "fields": [
+                {
+                    "name": "to",
+                    "type": "name"
+                },
+                {
+                    "name": "val",
+                    "type": "asset"
+                },
+                {
+                    "name": "from",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "cancelorder",
+            "base": "",
+            "fields": [
+                {
+                    "name": "canceler",
+                    "type": "name"
+                },
+                {
+                    "name": "order_id",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "commission",
+            "base": "",
+            "fields": [
+                {
+                    "name": "lower",
+                    "type": "uint64"
+                },
+                {
+                    "name": "upper",
+                    "type": "uint64"
+                },
+                {
+                    "name": "comperc",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "comshow",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "confirmorder",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "maker",
+                    "type": "name"
+                },
+                {
+                    "name": "taker",
+                    "type": "name"
+                },
+                {
+                    "name": "maker_voted",
+                    "type": "string"
+                },
+                {
+                    "name": "taker_voted",
+                    "type": "string"
+                },
+                {
+                    "name": "maker_confirmed",
+                    "type": "string"
+                },
+                {
+                    "name": "taker_confirmed",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "confirmtxn",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "transactionid",
+                    "type": "string"
+                },
+                {
+                    "name": "order_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "confrm",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "currency_stats",
+            "base": "",
+            "fields": [
+                {
+                    "name": "token_name",
+                    "type": "string"
+                },
+                {
+                    "name": "native_currency",
+                    "type": "string"
+                },
+                {
+                    "name": "supply",
+                    "type": "asset"
+                },
+                {
+                    "name": "max_supply",
+                    "type": "asset"
+                },
+                {
+                    "name": "issuer",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "makeorder",
+            "base": "",
+            "fields": [
+                {
+                    "name": "maker",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "uint64"
+                },
+                {
+                    "name": "currency",
+                    "type": "string"
+                },
+                {
+                    "name": "tokenneed",
+                    "type": "asset"
+                },
+                {
+                    "name": "wallet_address",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "order",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "maker",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "uint64"
+                },
+                {
+                    "name": "currencyhave",
+                    "type": "string"
+                },
+                {
+                    "name": "tokenneed",
+                    "type": "asset"
+                },
+                {
+                    "name": "wallet_address",
+                    "type": "string"
+                },
+                {
+                    "name": "taker",
+                    "type": "name"
+                },
+                {
+                    "name": "receiving_wallet_address",
+                    "type": "string"
+                },
+                {
+                    "name": "status",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "takeorder",
+            "base": "",
+            "fields": [
+                {
+                    "name": "taker",
+                    "type": "name"
+                },
+                {
+                    "name": "orderid",
+                    "type": "uint64"
+                },
+                {
+                    "name": "receiving_wallet_address",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "zetatransfer",
+            "base": "",
+            "fields": [
+                {
+                    "name": "order_id",
+                    "type": "uint64"
+                }
+            ]
+        }
+    ],
+    "types": [],
+    "actions": [
+        {
+            "name": "add",
+            "type": "add",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "cancelorder",
+            "type": "cancelorder",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "commission",
+            "type": "commission",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "comshow",
+            "type": "comshow",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "confirmtxn",
+            "type": "confirmtxn",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "makeorder",
+            "type": "makeorder",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "takeorder",
+            "type": "takeorder",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "zetatransfer",
+            "type": "zetatransfer",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "accounts",
+            "type": "account",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "confirmlist",
+            "type": "confirmorder",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "listedorders",
+            "type": "order",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "stat",
+            "type": "currency_stats",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "abi_extensions": []
+}
